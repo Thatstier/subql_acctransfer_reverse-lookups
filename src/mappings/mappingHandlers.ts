@@ -23,4 +23,3 @@ export async function handleEvent(event: SubstrateEvent): Promise<void> {
     transfer.amount = (amount as Balance).toBigInt();
     await transfer.save();
 }
-
